@@ -1,0 +1,51 @@
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css'; */
+
+/* @mixin my-component-theme($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  // Apply the palettes to your component's styles.
+  .my-component {
+    background-color: mat-color($primary);
+  }
+} */
+
+
+
+h2 {padding: 1rem;}
+
+mat-toolbar{
+    position:fixed;
+    top:0;
+    z-index: 2;
+    color: blue;
+}
+
+mat-sidenav-container {
+    height:100%;
+}
+
+
+mat-sidenav {
+    padding-top: 3.5rem;
+    @media screen and (min-width: 600px) {
+        padding-top: 4rem;
+    }
+    
+    .entry{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding:0.75rem;
+    }
+}
+
+h1 {
+    padding: 0 1rem;
+}
+
+mat-sidenav-content{
+    padding-top: 3.5rem;
+    @media screen and (min-width: 600px) {
+        padding-top: 4rem;
+    }
+}
